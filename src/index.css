@@ -1,0 +1,384 @@
+/* Mobile */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size:14px;
+  line-height: 1.3em;
+  font-family: 'Nunito', sans-serif;
+  background-color:#444;
+}
+a {
+  color: #fff;
+}
+a:hover {
+  color: deeppink
+}
+h1 {
+  font-weight:200;
+}
+hr {
+  padding:0;
+  border:0;
+  border-bottom:3px solid deeppink;
+  width:8%;
+}
+hr.left {
+  margin-left:0;
+}
+hr.footer {
+  width:100%;
+  border-bottom:1px solid #ddd;
+}
+input {
+  border:2px solid deeppink;
+  background-color:#fff;
+  font-family: inherit;
+}
+input:active {
+}
+.button {
+  background-color:deeppink;
+  border-radius:3px;
+  padding:0.5rem 1rem;
+  color:#fff;
+  text-decoration:none;
+  box-shadow: 0 0 5px 5px #444;
+  transition: ease-in-out 0.4s;
+}
+.button:hover {
+  background-color:#fff;
+  color:#333;
+}
+.button-outline {
+  background-color:transparent;
+  border:1px solid deeppink;
+}
+.button-outline:hover {
+  background-color: deeppink;
+  color:#fff;
+}
+.container {
+  width:100%;
+}
+.wrapper {
+  max-width: 1400px;
+  margin:0 auto;
+}
+nav {
+  color:#fff;
+  padding:1rem;
+}
+.logo {
+  display:inline-block;
+  width:20%;
+  padding:0;
+  margin:0;
+}
+.nav-links {
+  display:inline-block;
+  width:80%;
+  text-align:right;
+}
+.vertical-separator {
+  border-left:1px solid #999;
+  margin:0 .5rem;
+}
+nav a {
+  padding:0.2rem;
+  margin:0.5rem;
+  color:#aaa;
+  text-decoration:none;
+}
+.nav-links a:hover {
+  color:#fff;
+  border-bottom:1px solid hotpink;
+}
+.nav-link-active {
+  color:#fff!important;
+  border-bottom:1px solid hotpink;
+}
+.grid {
+  text-align:center;
+}
+.block {
+  display:inline-block;
+  vertical-align: top;
+}
+.card-team {
+  width:15rem;
+  padding:2rem 0;
+  margin:1rem 1rem;
+}
+.card-team h4 {
+  margin-bottom:-1rem;
+}
+.card-team img {
+  height:100px;
+  width:100px;
+  border-radius:100%;
+}
+.card-benefit {
+  width:25%;
+  padding:2rem 0;
+  margin:1rem 1rem;
+}
+.card-jobs {
+  background-color:#444;
+  border-radius:5px;
+  padding:1.5rem;
+  width:70%;
+  margin: 1rem auto;
+}
+.card-jobs-text {
+  vertical-align: middle;
+  width:70%;
+  display:inline-block;
+}
+.card-jobs-action {
+  vertical-align: middle;
+  display:inline-block;
+  text-align:right;
+  width:30%;
+}
+.apply {
+  text-align:center;
+}
+.content {
+  position:relative;
+  padding:1rem;
+}
+header {
+  height:50rem;
+  color:#fff;
+  padding:1rem;
+}
+header.careers {
+  height:auto;
+}
+h1.header {
+  text-align:center;
+  margin-bottom:5rem;
+}
+p.center-text {
+  max-width:40rem;
+  margin:0 auto;
+}
+.quote {
+  text-align:center;
+  display:inline-block;
+  border-radius:5px;
+  padding:2rem;
+  background-color:#f1f1f1;
+  width:60%;
+  vertical-align: middle;
+  color:#333;
+}
+.quote p {
+  margin:1.5rem 0;
+}
+.quote-icon-left {
+  text-align:left;
+  display:block;
+  color:deeppink;
+}
+.quote-icon-right {
+  display:block;
+  text-align:right;
+  color:deeppink;
+}
+.quote-icon-arrow {
+  transition: ease-in-out 0.4s;
+  cursor: pointer;
+  opacity:0.5;
+  padding:0.5rem;
+}
+.quote-icon-arrow:hover {
+  opacity:1;
+}
+.quote-arrow-left {
+  display:inline-block;
+  text-align:left;
+  vertical-align: middle;
+  width:20%;
+}
+.quote-arrow-right {
+  display:inline-block;
+  vertical-align: middle;
+  text-align:right;
+  width:20%;
+}
+h2.center {
+  text-align:center;
+}
+.sizzler {
+  padding-top:15rem;
+  text-align: center;
+}
+.sizzler h1 {
+  line-height:16px;
+}
+.social {
+  position:absolute;
+  bottom:0;
+  right:2rem;
+}
+.address {
+  bottom:0;
+  padding:1rem 0rem;
+  font-size:0.8em;
+  line-height:1.5em;
+}
+.socialmediaicon {
+  padding: 0.5rem 1rem;
+  color:#333;
+}
+.socialmediaicon:hover {
+  color:#aaa;
+}
+.add {
+  display:inline-block;
+  vertical-align: middle;
+  padding-right:1.5rem;
+}
+.phone {
+  border-left:1px solid #999;
+  padding-left:1.5rem;
+  display:inline-block;
+  vertical-align: middle;
+}
+.intro {
+  background-color: #fff;
+}
+
+.testimonial {
+  color:#fff;
+  background-color: #333;
+  text-align:center;
+}
+.stores {
+  background-color: #fff;
+}
+.job {
+  color:#fff;
+  background-color: #333;
+}
+.contact {
+  color:#fff;
+  background-color: #333;
+  text-align:center;
+}
+footer {
+  background-color: #fff;
+}
+.footer-logo {
+  width:180px;
+  height:60px;
+}
+
+/* Tablet */
+@media screen and (min-width: 426px) {
+  h1 {
+    font-size:3.5em;
+    font-weight:200;
+  }
+  nav {
+    color:#fff;
+    padding:2rem;
+  }
+  header {
+    padding:2rem;
+    position:relative;
+  }
+  .content {
+    padding:3rem;
+  }
+  .pitch {
+    text-align: center;
+    width:85%;
+    margin: 0 auto;
+  }
+  .pitch p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+  .support {
+    margin:8rem 0 ;
+  }
+  .support-text {
+    display:inline-block;
+    vertical-align:middle;
+    width:40%;
+    height:100%;
+    padding:2rem;
+  }
+  .support-img {
+    display:inline-block;
+    vertical-align:middle;
+    height:20rem;
+    width:60%;
+  }
+  .support img {
+    height:inherit;
+    width:100%;
+    position:relative;
+    border:0;
+    box-shadow: 0 0 20px 0 #ddd;
+  }
+  .support-left img {
+    left:-3rem;
+  }
+  .support-right img {
+    right:-3rem;
+  }
+  .find {
+    width:40%;
+    padding-right:3rem;
+  }
+  .gmaps-container {
+    position:absolute;
+    top:0;
+    right:0;
+    width:60%;
+    height:100%;
+  }
+    .gmaps {
+      width:100%!important;
+      height:100%!important;
+    }
+}
+
+/* Laptop+ */
+@media screen and (min-width: 769px) {
+  body {
+    font-size:16px;
+    line-height:1.4em;
+  }
+  header {
+    padding:2rem;
+  }
+  .content {
+    padding:6rem 4rem;
+  }
+  .section {
+    margin:0 2rem;
+  }
+  .support-left img {
+    left:-4rem;
+  }
+  .support-right img {
+    right:-4rem;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    font-size:18px;
+    line-height:1.5em;
+  }
+}
