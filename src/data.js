@@ -146,6 +146,8 @@ export default {
       fax: '626-851-8165',
       address: '3060 Baldwin Park Blvd #D101\nBaldwin Park, CA 91706',
       cross: 'Baldwin Park Blvd and Francisquito',
+      lat: '34.068911',
+      lng: '-117.977484'
     },
     {
       location: 'Covina',
@@ -153,6 +155,8 @@ export default {
       fax: '626-966-3516',
       address: '220 N Azusa Ave.\nCovina, CA 91722',
       cross: 'Azusa Ave and Badillo',
+      lat: '34.087578',
+      lng: '-117.907472'      
     },
     {
       location: 'Downey',
@@ -160,6 +164,8 @@ export default {
       fax: 'Coming soon!',
       address: '8994 Apollo Way\nDowney, CA 90242',
       cross: 'Apollo Way and Bellflower Blvd',
+      lat: '33.922721',
+      lng: '-118.125753'      
     },
     {
       location: 'La Puente',
@@ -167,6 +173,8 @@ export default {
       fax: '626-918-2106',
       address: '1273 N. Hacienda Blvd #3\n, CA 91744',
       cross: 'Hacienda Blvd and Fairgrove',
+      lat: '34.043494',
+      lng: '-117.950205'      
     },
     {
       location: 'Monterey Park',
@@ -174,6 +182,8 @@ export default {
       fax: '323-780-9384',
       address: '2123 S. Atlantic Blvd\nMonterey Park, CA 91754',
       cross: 'Atlantic Ave and Floral',
+      lat: '34.038920',
+      lng: '-118.145409'      
     },
     {
       location: 'Northridge',
@@ -181,6 +191,8 @@ export default {
       fax: '818-998-2401',
       address: '18497 Nordhoff St.\nNorthridge, CA 91325',
       cross: 'Reseda and Nordhoff Blvd',
+      lat: '34.236051',
+      lng: '-118.535477'      
     },
     {
       location: 'Panorama City',
@@ -188,6 +200,8 @@ export default {
       fax: '818-781-1325',
       address: '8244 Van Nuys Blvd.\nPanorama City, CA 91402',
       cross: 'Van Nuys and Titus',
+      lat: '34.220922',
+      lng: '-118.448491'      
     },
     ],
     lasouth: [
@@ -197,6 +211,8 @@ export default {
       fax: '657-233-5741',
       address: '1686 W Katella Ave\nAnaheim, CA 92802',
       cross: 'Katella Ave and Euclid St.',
+      lat: '33.801721',
+      lng: '-117.940651'      
     },
     {
       location: 'Bixby Knolls',
@@ -204,6 +220,8 @@ export default {
       fax: 'Coming soon!',
       address: '4512 Atlantic Avenue\nLong Beach, CA 90807',
       cross: 'Atlantic Ave and E 45th St.',
+      lat: '33.840197',
+      lng: '-118.184362'      
     },
     {
       location: 'Crenshaw',
@@ -211,6 +229,8 @@ export default {
       fax: '323-545-9649',
       address: '3210 W Saluson Ave.\nLos Angeles, CA 90043',
       cross: 'Slauson Ave & Crenshaw',
+      lat: '33.988842',
+      lng: '-118.328798'      
     },
     {
       location: 'Cudahy',
@@ -218,6 +238,8 @@ export default {
       fax: '323-771-3317',
       address: '7200 Atlantic Ave. Unit B\nCudahy, CA 90201',
       cross: 'Atlantic Ave. and Florence',
+      lat: '33.969824',
+      lng: '-118.187686'      
     },
     {
       location: 'Fullerton',
@@ -225,6 +247,8 @@ export default {
       fax: '714-992-2215',
       address: '550 N. State College Blvd.\nFullerton, CA 92831',
       cross: 'State College and Chapman',
+      lat: '33.875476',
+      lng: '-117.888777'      
     },
     {
       location: 'Hawthorne',
@@ -232,6 +256,8 @@ export default {
       fax: '310-676-0905',
       address: '12745 Hawthorne Blvd.\nHawthorne, CA 90250',
       cross: 'Hawthorne and El Segundo Blvd.',
+      lat: '33.916605',
+      lng: '-118.353068'      
     },
     {
       location: 'Inglewood',
@@ -239,6 +265,8 @@ export default {
       fax: '310-419-4265',
       address: '425 E. Manchester Blvd #D\nInglewood, CA 90301',
       cross: 'Manchester and Locust',
+      lat: '33.962264',
+      lng: '-118.349622'      
     },
     {
       location: 'Long Beach 1',
@@ -246,6 +274,8 @@ export default {
       fax: '562-988-8714',
       address: '141 E. Willow Street\nLong Beach, CA 90806',
       cross: 'Long Beach and Willow St.',
+      lat: '33.805574',
+      lng: '-118.190648'      
     },
     {
       location: 'Long Beach 2',
@@ -253,6 +283,8 @@ export default {
       fax: '562-354-9222',
       address: '6521 E Spring Street\nLong Beach, CA 90806',
       cross: 'Spring St. and Palo Verde Ave.',
+      lat: '33.810762',
+      lng: '-118.106303'      
     },
     {
       location: 'Santa Ana',
@@ -260,6 +292,8 @@ export default {
       fax: '714-541-4526',
       address: '1313 W 17th Street\nSanta Ana, CA 92706',
       cross: '17th and Bristol St.',
+      lat: '33.760343',
+      lng: '-117.886243'      
     },
     {
       location: 'Torrance',
@@ -267,6 +301,8 @@ export default {
       fax: '310-371-0201',
       address: '18425 Hawthorne Blvd.\nTorrance, CA 90504',
       cross: 'Hawthrone and 182nd St.',
+      lat: '33.863429',
+      lng: '-118.352690'      
     },
     {
       location: 'Westminster',
@@ -274,6 +310,8 @@ export default {
       fax: '714-899-8739',
       address: '6777 Westminster Blvd\nWestminster, CA 92683',
       cross: 'Westminster and Goldenwest',
+      lat: '33.761474',
+      lng: '-118.009705'      
     }
     ],
     sandiego: [
@@ -283,6 +321,8 @@ export default {
       fax: '619-691-9101',
       address: '542 Broadway #A&B\nChula Vista, CA 91910',
       cross: 'Broadway and H St.',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'Chula Mall',
@@ -290,6 +330,8 @@ export default {
       fax: '619-422-2412',
       address: '542 Broadway #1004\nChula Vista, CA 91910',
       cross: 'Broadway and H St.',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'Clairemont',
@@ -297,6 +339,8 @@ export default {
       fax: '858-270-3509',
       address: '3592 Clairemont Mesa Blvd. #C\nSan Diego, CA 92117',
       cross: 'Clairemont Mesa Blvd. and Rolfe Rd.',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'El Cajon',
@@ -304,6 +348,8 @@ export default {
       fax: '619-590-1989',
       address: '354 N. 2nd Street\nEl Cajon, CA 92021',
       cross: '',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },      
     {
       location: 'Escondido',
@@ -311,6 +357,8 @@ export default {
       fax: '760-747-1080',
       address: '1201 E. Valley Parkway #C\nEscondido, CA 92027',
       cross: 'Valley Pkwy and Ash',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'Murphy Canyon',
@@ -318,6 +366,8 @@ export default {
       fax: '858-694-0479',
       address: '3755 Murphy Canyon Road #A\nSan Diego, CA 92123',
       cross: 'Murphy Canyon Rd. and Aero Dr.',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'National City',
@@ -325,6 +375,8 @@ export default {
       fax: '619-477-7328',
       address: '3007 Highland Ave. #109\nNational City, CA 91950',
       cross: 'Highland Ave. and 30th',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'San Marcos 1',
@@ -332,6 +384,8 @@ export default {
       fax: '760-598-9740',
       address: '700 S. Rancho Santa Fe Rd. #A\nSan Marcos, CA 92078',
       cross: 'Rancho Santa Fe and San Marcos Blvd.',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'San Marcos 2',
@@ -339,6 +393,8 @@ export default {
       fax: 'Coming soon!',
       address: '595 Grand Ave. #100\nSan Marcos, CA 92078',
       cross: 'Grand Ave. and Creekside Place',
+      lat: '34.068911',
+      lng: '-117.977484'      
     },
     {
       location: 'Telegraph',
@@ -346,6 +402,8 @@ export default {
       fax: '619-656-9333',
       address: '523 Telegraph Canyon Rd.\nChula Vista, CA 91911',
       cross: 'Telegraph Canyon Rd. and I-805',
+      lat: '34.068911',
+      lng: '-117.977484'      
     }
     ]
   }

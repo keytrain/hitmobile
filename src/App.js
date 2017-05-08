@@ -50,6 +50,11 @@ class App extends Component {
                 <div className='col-4'>
                   <img className='footer-logo' src='' alt='logo' />
                   <p>HITmobile is a company that is about bridging Latino consumers and the wireless world with amazing customer service.</p>
+                </div>
+                <div className='col-4'>
+                  <h3>Contact</h3>
+                  <FontAwesome className='' name='phone' /> <FontAwesome className='' name='fax' /> (877) 448 - 7711<br />
+                  <FontAwesome className='' name='envelope-o' /> customerfeedback@myhitmobile.com
                   <div className='address'>
                     <div className='add'>
                     <strong>HIT Mobile, Inc</strong><br />
@@ -65,26 +70,9 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
-
-                <div className='col-1'>
-                  <strong>Careers</strong><br /><br />
-                  About Us<br />
-                  Meet the Team<br />
-                  Jobs<br />
-                </div>
-                <div className='col-1'>
-                  <strong>Business</strong><br /><br />
-                  About Us<br />
-                  Meet the Team<br />
-                  Jobs<br />
-                </div>
-                <div className='col-2'>
-                  <strong>Contact</strong><br /><br />
-                  Phone &amp; Fax (877) 448-7711<br /><br />
-                  customerfeedback@myhitmobile.com<br />
-                </div>
                 <hr className='footer' />
                 <small>&#9400; 2017 HITmobile Inc. All rights reserved.</small>
+                <small>Stores - Careers - Business</small>
               </footer>
             </div>
 

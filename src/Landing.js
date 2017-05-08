@@ -2,15 +2,18 @@ import React from 'react'
 import GMaps from './GMaps'
 import data from './data'
 import FontAwesome from 'react-fontawesome'
+import Sizzler from './Sizzler'
 
 class Landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       quote: 0,
-      quoteMax: data.content.testimonial.customer[this.props.lang].length
+      quoteMax: data.content.testimonial.customer[this.props.lang].length,
+      location: '',
     };
 
+    this.handleLocation = this.handleLocation.bind(this);
     this.handleQuote = this.handleQuote.bind(this);
   }
 
@@ -39,9 +42,18 @@ class Landing extends React.Component {
     }
   }
 
+  handleLocation(e) {
+    e.persist();
+    let area = e.currentTarget.attributes['data-area'].value;
+    let loc = e.currentTarget.attributes['data-loc'].value;
+
+    this.setState({location: data.stores[area][loc]});
+  }
+
   render() {
     return (
       <div>
+        <Sizzler />
         <header>
           <div>
             <div className='sizzler'>
@@ -57,34 +69,36 @@ class Landing extends React.Component {
 
             <div className='pitch'>
               <h2>At HITmobile, it's all about the customer experience.</h2>
-              <p>The customer is the heart of every transaction and we treat each customer like family. We will provide the Latino community a one stop shop for all their wireless needs.</p>
+              <p>The customer is the heart of every transaction and we treat each customer like family. <br />We will provide the Latino community a one stop shop for all their wireless needs.</p>
               <hr />
             </div>
             {/*<p>{data.content.intro[this.state.lang].about}</p>*/}
 
             <div className='support support-left'>
-              <div className='support-img'><img src='' alt='' /></div>
+              <div className='support-img'></div>
               <div className='support-text'>
-                <h2>Bilingual language support</h2>
+                <h2>Bilingual Support</h2>
                 <p>In the store, on the phone and online, 100% bilingual sales and customer service hired directly from within the community, and 100% bilingual merchandising and marketing materials.</p>
               </div>
             </div>
             
           <div className='support support-right'>
               <div className='support-text'>
-                <h2>Complete experience</h2>
+                <h2>A Complete Experience</h2>
                 <p>Products that meet your needs like competitive international rates, flex pay products, and family plans.</p>
               </div>
-              <div className='support-img'><img src='' alt='' /></div>
+              <div className='support-img'></div>
             </div>
 
             <div className='support support-left'>
-              <div className='support-img'><img src='' alt='' /></div>
+              <div className='support-img'></div>
               <div className='support-text'>
-                <h2>Full setup</h2>
+                <h2>Full Setup</h2>
                 <p>100% customer satisfaction by helping personalize your wireless solution with the right phone, the right plan, and the right way to pay. 100% set up including feature demonstrations.</p>
               </div>
             </div>
+
+             <h2>We'll do our best to make sure you're happy.</h2>
 
           </div>
         </div>
@@ -109,20 +123,20 @@ class Landing extends React.Component {
             <div className='find'>
               <h2>Find a store near you!</h2>
               <h3>La North</h3>
-              {data.stores.lanorth.map((e) => (
-                <div>{e.location}</div>
+              {data.stores.lanorth.map((e, index) => (
+                <div key={index} data-area='lanorth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
               <h3>La South</h3>
-              {data.stores.lasouth.map((e) => (
-                <div>{e.location}</div>
+              {data.stores.lasouth.map((e, index) => (
+                <div key={index} data-area='lasouth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
               <h3>San Diego</h3>
-              {data.stores.sandiego.map((e) => (
-                <div>{e.location}</div>
+              {data.stores.sandiego.map((e, index) => (
+                <div key={index} data-area='sandiego' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
             </div>
             <div className='gmaps-container'>
-              <GMaps item='glass' />
+              <GMaps item={this.state.location} />
             </div>
           </div>
         </div>

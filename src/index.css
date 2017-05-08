@@ -45,14 +45,16 @@ input:active {
 .button {
   background-color:deeppink;
   border-radius:3px;
-  padding:0.5rem 1rem;
+  padding:0.7rem 1.3rem;
   color:#fff;
   text-decoration:none;
-  box-shadow: 0 0 5px 5px #444;
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.3s;
+  text-transform:uppercase;
+  font-weight:800;
 }
 .button:hover {
   background-color:#fff;
+  box-shadow: 0 0 20px 0 deeppink;
   color:#333;
 }
 .button-outline {
@@ -76,13 +78,16 @@ nav {
 }
 .logo {
   display:inline-block;
-  width:20%;
-  padding:0;
+  width:10%;
+  text-align:center;
+  padding:1rem;
   margin:0;
+  color:#333;
+  background-color:#fff;
 }
 .nav-links {
   display:inline-block;
-  width:80%;
+  width:90%;
   text-align:right;
 }
 .vertical-separator {
@@ -92,7 +97,7 @@ nav {
 nav a {
   padding:0.2rem;
   margin:0.5rem;
-  color:#aaa;
+  color:#ddd;
   text-decoration:none;
 }
 .nav-links a:hover {
@@ -181,6 +186,11 @@ p.center-text {
 }
 .quote p {
   margin:1.5rem 0;
+  font-size:1.7em;
+  line-height:1.3em;
+  text-align:left;
+  width:82%;
+  margin:0 auto;
 }
 .quote-icon-left {
   text-align:left;
@@ -193,12 +203,14 @@ p.center-text {
   color:deeppink;
 }
 .quote-icon-arrow {
-  transition: ease-in-out 0.4s;
+  transition: ease-in-out 0.3s;
   cursor: pointer;
   opacity:0.5;
-  padding:0.5rem;
+  border-radius: 100%;
+  padding:0.3rem 1rem;
 }
 .quote-icon-arrow:hover {
+  background-color:#444;
   opacity:1;
 }
 .quote-arrow-left {
@@ -313,15 +325,18 @@ footer {
   .support-text {
     display:inline-block;
     vertical-align:middle;
-    width:40%;
+    width:45%;
     height:100%;
-    padding:2rem;
+    padding:3rem 6rem;
   }
   .support-img {
     display:inline-block;
     vertical-align:middle;
     height:20rem;
-    width:60%;
+    width:55%;
+    background: no-repeat center url("/img/1.JPG");
+    box-shadow: 0 0 20px 0 #ddd;
+    background-size: cover;
   }
   .support img {
     height:inherit;
