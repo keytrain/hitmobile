@@ -28,7 +28,7 @@ class App extends Component {
         <div className='container'>
           <div className='wrapper'>
             <nav>
-              <Link to='/' className='logo'>HITmobile</Link>
+              <Link to='/' className='logo'><img src='http://myhitmobile.com/images/img_logo.jpg' alt='logo' /></Link>
               <div className='nav-links'>
                 <a href='/#find'>Stores</a>
                 <NavLink to='/careers' activeClassName='nav-link-active'>Careers</NavLink>
@@ -47,14 +47,15 @@ class App extends Component {
 
             <div className='section'>
               <footer className='content'>
-                <div className='col-4'>
-                  <img className='footer-logo' src='' alt='logo' />
+                <div className='footer-col footer-about'>
+                  <img className='footer-logo' src='http://myhitmobile.com/images/img_logo.jpg' alt='logo' />
                   <p>HITmobile is a company that is about bridging Latino consumers and the wireless world with amazing customer service.</p>
                 </div>
-                <div className='col-4'>
-                  <h3>Contact</h3>
-                  <FontAwesome className='' name='phone' /> <FontAwesome className='' name='fax' /> (877) 448 - 7711<br />
-                  <FontAwesome className='' name='envelope-o' /> customerfeedback@myhitmobile.com
+                <div className='footer-col footer-contact'>
+                  <h4>Contact</h4>
+                  <FontAwesome className='' fixedWidth name='phone' /> (877) 448 - 7711<br />
+                  <FontAwesome className='' fixedWidth name='fax' /> (877) 448 - 7711<br />
+                  <FontAwesome className='' fixedWidth name='envelope-o' /> <a href='emailto:customerfeedback@myhitmobile.com'>customerfeedback@myhitmobile.com</a>
                   <div className='address'>
                     <div className='add'>
                     <strong>HIT Mobile, Inc</strong><br />
@@ -71,8 +72,10 @@ class App extends Component {
                   </div>
                 </div>
                 <hr className='footer' />
-                <small>&#9400; 2017 HITmobile Inc. All rights reserved.</small>
-                <small>Stores - Careers - Business</small>
+                <div className='footer-foot'>
+                  <small>&#9400; 2017 HITmobile Inc. All rights reserved.</small>
+                  <small className='footer-links'><a href='/#find'>Stores</a> - <a href='/careers'>Careers</a> - <a href='/business'>Business</a></small>
+                </div>
               </footer>
             </div>
 

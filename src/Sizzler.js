@@ -7,7 +7,8 @@ class Sizzler extends React.Component {
       sizWidth : 0,
       sizHeight : 0,
       imgLimit : 61,
-      img: 1
+      img: 1,
+      changeBGInterval: undefined
     }
     this.handleResize = this.handleResize.bind(this);
     this.sizIMGUpdate = this.sizIMGUpdate.bind(this);
@@ -16,7 +17,7 @@ class Sizzler extends React.Component {
   componentDidMount() {
     this.sizIMGUpdate();
     window.addEventListener('resize', this.handleResize);
-    window.setInterval(() => {
+    this.setState({changeBGInterval: setInterval(() => {
       this.setState((prevState) => {
         if (prevState.img + 1 <= prevState.imgLimit) {
           prevState.img += 1;
@@ -25,10 +26,11 @@ class Sizzler extends React.Component {
         return prevState;
       });
       this.sizIMGUpdate();
-    }, 5000);
+    }, 5000)}) 
   }
 
   componentWillUnmount() {
+    clearInterval(this.state.changeBGInterval);
     window.removeEventListener('resize', this.handleResize);
   }
 

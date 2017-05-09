@@ -1,5 +1,4 @@
 import React from 'react'
-import data from './data'
 import FontAwesome from 'react-fontawesome'
 
 
@@ -17,7 +16,7 @@ function Careers(props) {
           <br /><br />
           <h2 className='center'>Meet the Team</h2>
           <div className='grid'>
-            {data.content.team[props.lang].map((e, index) =>
+            {window.data.content.team[props.lang].map((e, index) =>
               <div className='block card-team' key={index}>
                 <img src={e.icon} alt='icon' />
                 <h4>{e.name}</h4>
@@ -34,7 +33,7 @@ function Careers(props) {
           <p className='center-text'>We’ll support our community members by offering jobs with competitive pay and benefits, flexible schedules to accommodate education, and promoting from within the company.</p>
           <br />
           <div className='grid'>
-            {data.content.benefits[props.lang].map((e, index) =>
+            {window.data.content.benefits[props.lang].map((e, index) =>
               <div className='block card-benefit' key={index}>
                 <FontAwesome name={e.icon} size='3x' />
                 <p>{e.text}</p>
@@ -42,12 +41,12 @@ function Careers(props) {
             )}
           </div>
           <br />
-          employee testimonial
+          {/*employee testimonial*/}
           <br /><br />
-          {data.content.jobs[props.lang].map((e, index) =>
+          {window.data.content.jobs[props.lang].map((e, index) =>
             <div className='card-jobs' key={index}>
               <div className='card-jobs-text'>
-                <h2>{e.text}</h2>
+                <h3>{e.text}</h3>
               </div>
               <div className='card-jobs-action'>
                 <a href='' className='button'>More info</a>
@@ -55,7 +54,7 @@ function Careers(props) {
             </div>
           )}
           <br />
-          <div className='apply'>Apply to careers@myhitmobile.com</div>
+          <div className='apply'>Apply to <a href='emailto:careers@myhitmobile.com'>careers@myhitmobile.com</a></div>
         </div>
       </div>
       

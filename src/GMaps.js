@@ -17,20 +17,13 @@ export class Container extends Component {
     this.onMarkerClick = this.onMarkerClick.bind(this);
     this.onMapClicked = this.onMapClicked.bind(this);
     this.fetchPlaces = this.fetchPlaces.bind(this);
-    this.recenterMap = this.recenterMap.bind(this);
   }
 
   componentDidUpdate(prevProps, prevState) {
     if (this.props.item) {
       this.state.map.panTo({lat: parseFloat(this.props.item.lat), lng: parseFloat(this.props.item.lng)})
-      if (prevState.selectedPlace !== this.state.selectedPlace) {
-        this.recenterMap();
-      }
+      this.state.map.setZoom(17);
     }
-  }
-
-  recenterMap() {
-
   }
 
   fetchPlaces(mapProps, map) {
@@ -38,16 +31,18 @@ export class Container extends Component {
   }
 
   onMarkerClick(props, marker, e) {
+    let area = props['data-area'];
+    let loc = props['data-loc'];
+    
     props.map.panTo(marker.getPosition())
     this.setState({
-      selectedPlace: props,
+      selectedPlace: window.data.stores[area][loc],
       activeMarker: marker,
       showInfoWindow: true
     });
   }
   
   onMapClicked(props) {
-    console.log(props);
     if (this.state.showInfoWindow) {
       this.setState({
         showInfoWindow: false,
@@ -61,21 +56,31 @@ export class Container extends Component {
       <Map google={this.props.google} 
         onClick={this.onMapClicked} 
         onReady={this.fetchPlaces}
-        centerAroundCurrentLocation={true}
+        zoom={9}
         initialCenter={{
-            lat: 34.4,
-            lng: -118
+            lat: 33.4,
+            lng: -117.8
           }}
         className={'gmaps'}>
-        <Marker onClick={this.onMarkerClick} name={this.props.item.location} 
-          position={{lat: this.props.item.lat, lng: this.props.item.lng }} />
+          {/*<Marker onClick={this.onMarkerClick} name={this.props.item.location} position={{lat: this.props.item.lat, lng: this.props.item.lng }} />*/}
+
+        {window.data.stores.lanorth.map((e, index) => (
+          <Marker key={index} onClick={this.onMarkerClick} data-loc={index} data-area='lanorth' name={e.location} position={{lat: e.lat, lng: e.lng }} />
+        ))}
+        {window.data.stores.lasouth.map((e, index) => (
+          <Marker key={index} onClick={this.onMarkerClick} data-loc={index} data-area='lasouth' name={e.location} position={{lat: e.lat, lng: e.lng }} />
+        ))}
+        {window.data.stores.sandiego.map((e, index) => (
+          <Marker  key={index} onClick={this.onMarkerClick} data-loc={index} data-area='sandiego' name={e.location} position={{lat: e.lat, lng: e.lng }} />
+        ))}
         <InfoWindow
           marker={this.state.activeMarker}
           visible={this.state.showInfoWindow}>
           <div>
-            <p><strong>{this.props.item.address}</strong></p>
-            <p>Between {this.props.item.cross}</p>
-            <p>Phone: {this.props.item.phone} - Fax: {this.props.item.fax}</p>
+            <pre><strong>{this.state.selectedPlace.address}</strong></pre>
+            <p>{'Between ' + this.state.selectedPlace.cross}</p>
+            <p><strong>Phone:</strong> {this.state.selectedPlace.phone}<br />
+            <strong>Fax:</strong> {this.state.selectedPlace.fax}</p>
           </div>
         </InfoWindow>
       </Map>

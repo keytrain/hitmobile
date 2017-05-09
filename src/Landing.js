@@ -1,16 +1,16 @@
 import React from 'react'
 import GMaps from './GMaps'
-import data from './data'
 import FontAwesome from 'react-fontawesome'
 import Sizzler from './Sizzler'
+import { Link } from 'react-router-dom';
 
 class Landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       quote: 0,
-      quoteMax: data.content.testimonial.customer[this.props.lang].length,
-      location: '',
+      quoteMax: window.data.content.testimonial.customer[this.props.lang].length,
+      selection: '',
     };
 
     this.handleLocation = this.handleLocation.bind(this);
@@ -43,11 +43,10 @@ class Landing extends React.Component {
   }
 
   handleLocation(e) {
-    e.persist();
     let area = e.currentTarget.attributes['data-area'].value;
     let loc = e.currentTarget.attributes['data-loc'].value;
 
-    this.setState({location: data.stores[area][loc]});
+    this.setState({selection: window.data.stores[area][loc]});
   }
 
   render() {
@@ -58,7 +57,7 @@ class Landing extends React.Component {
           <div>
             <div className='sizzler'>
               <h1>Estamos Juntos</h1>
-              <p>Bridging Latino consumers and the wireless world.</p>
+              <h3>Bridging Latino consumers and the wireless world.</h3>
               <br />
               <a href='#find' className='button button-outline'>Find a Store</a>
             </div>
@@ -77,14 +76,14 @@ class Landing extends React.Component {
             <div className='support support-left'>
               <div className='support-img'></div>
               <div className='support-text'>
-                <h2>Bilingual Support</h2>
+                <h3>Bilingual Support</h3>
                 <p>In the store, on the phone and online, 100% bilingual sales and customer service hired directly from within the community, and 100% bilingual merchandising and marketing materials.</p>
               </div>
             </div>
             
           <div className='support support-right'>
               <div className='support-text'>
-                <h2>A Complete Experience</h2>
+                <h3>A Complete Experience</h3>
                 <p>Products that meet your needs like competitive international rates, flex pay products, and family plans.</p>
               </div>
               <div className='support-img'></div>
@@ -93,24 +92,25 @@ class Landing extends React.Component {
             <div className='support support-left'>
               <div className='support-img'></div>
               <div className='support-text'>
-                <h2>Full Setup</h2>
+                <h3>Full Setup</h3>
                 <p>100% customer satisfaction by helping personalize your wireless solution with the right phone, the right plan, and the right way to pay. 100% set up including feature demonstrations.</p>
               </div>
             </div>
-
-             <h2>We'll do our best to make sure you're happy.</h2>
-
           </div>
         </div>
         <div className='section testimonial'>
           <div className='content'>
+            <div className='pitch'>
             <h2>But don't take it from us.</h2>
+            <p>Here's some feedback we got from our customers.</p>
+            </div>
+            <br /><br />
             <div className='quote-arrow-left'>
               <FontAwesome name='angle-left' className='quote-icon-arrow' data-dir='left' size='2x' onClick={this.handleQuote} />
             </div>
             <div className='quote'>
               <FontAwesome name='quote-left' className='quote-icon-left' size='2x' />
-              <p>{data.content.testimonial.customer[this.props.lang][this.state.quote].text}</p>
+              <p>{window.data.content.testimonial.customer[this.props.lang][this.state.quote].text}</p>
               <FontAwesome name='quote-right' className='quote-icon-right' size='2x' />
             </div>
             <div className='quote-arrow-right'>
@@ -123,30 +123,46 @@ class Landing extends React.Component {
             <div className='find'>
               <h2>Find a store near you!</h2>
               <h3>La North</h3>
-              {data.stores.lanorth.map((e, index) => (
-                <div key={index} data-area='lanorth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
+              {window.data.stores.lanorth.map((e, index) => (
+                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='lanorth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
               <h3>La South</h3>
-              {data.stores.lasouth.map((e, index) => (
-                <div key={index} data-area='lasouth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
+              {window.data.stores.lasouth.map((e, index) => (
+                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='lasouth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
               <h3>San Diego</h3>
-              {data.stores.sandiego.map((e, index) => (
-                <div key={index} data-area='sandiego' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
+              {window.data.stores.sandiego.map((e, index) => (
+                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='sandiego' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
               ))}
             </div>
             <div className='gmaps-container'>
-              <GMaps item={this.state.location} />
+              <GMaps item={this.state.selection} />
             </div>
           </div>
         </div>
         <div className='section contact'>
           <div className='content'>
-            <h2>Still have a question?</h2>
-            <div>Call us at (877) 448 - 7711</div>
-            or
-            <div>Email us at customerfeedback@myhitmobile.com</div>
+            <div className='questionCTA'>
+              <h2>Still have a question?</h2>
+              <p>Call us at (877) 448 - 7711</p>
+              <p>or</p>
+              <p>Email us at <a href='emailto:customerfeedback@myhitmobile.com'>customerfeedback@myhitmobile.com</a></p>
+            </div>
           </div>
+        </div>
+        <div className='section finalCTA'>
+            <a href='/careers'>
+              <div className='finalCTAbuttons jobButton'>
+                <h3>Looking for a job?</h3>
+                <p>Find opportunities <FontAwesome name='arrow-circle-right' className='CTAArrow' /></p>
+              </div>
+            </a>
+            <a href='/business'>
+              <div className='finalCTAbuttons busButton'>
+                <h3>Are you a business?</h3>
+                <p>Talk to us <FontAwesome name='arrow-circle-right' className='CTAArrow' /></p>
+              </div>
+            </a>
         </div>
 
       </div>

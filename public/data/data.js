@@ -1,4 +1,4 @@
-export default {
+window.data = {
   content: {
     sizzler: {
       en: {
@@ -321,8 +321,8 @@ export default {
       fax: '619-691-9101',
       address: '542 Broadway #A&B\nChula Vista, CA 91910',
       cross: 'Broadway and H St.',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.629223',
+      lng: '-117.090775'      
     },
     {
       location: 'Chula Mall',
@@ -330,8 +330,8 @@ export default {
       fax: '619-422-2412',
       address: '542 Broadway #1004\nChula Vista, CA 91910',
       cross: 'Broadway and H St.',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.629195',
+      lng: '-117.089686'      
     },
     {
       location: 'Clairemont',
@@ -339,8 +339,8 @@ export default {
       fax: '858-270-3509',
       address: '3592 Clairemont Mesa Blvd. #C\nSan Diego, CA 92117',
       cross: 'Clairemont Mesa Blvd. and Rolfe Rd.',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.827768',
+      lng: '-117.208853'      
     },
     {
       location: 'El Cajon',
@@ -348,8 +348,8 @@ export default {
       fax: '619-590-1989',
       address: '354 N. 2nd Street\nEl Cajon, CA 92021',
       cross: '',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.827768',
+      lng: '-117.208853'      
     },      
     {
       location: 'Escondido',
@@ -357,8 +357,8 @@ export default {
       fax: '760-747-1080',
       address: '1201 E. Valley Parkway #C\nEscondido, CA 92027',
       cross: 'Valley Pkwy and Ash',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '33.130274',
+      lng: '-117.066573'      
     },
     {
       location: 'Murphy Canyon',
@@ -366,8 +366,8 @@ export default {
       fax: '858-694-0479',
       address: '3755 Murphy Canyon Road #A\nSan Diego, CA 92123',
       cross: 'Murphy Canyon Rd. and Aero Dr.',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.810820',
+      lng: '-117.116016'      
     },
     {
       location: 'National City',
@@ -375,8 +375,8 @@ export default {
       fax: '619-477-7328',
       address: '3007 Highland Ave. #109\nNational City, CA 91950',
       cross: 'Highland Ave. and 30th',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.658819',
+      lng: '-117.088864'      
     },
     {
       location: 'San Marcos 1',
@@ -384,8 +384,8 @@ export default {
       fax: '760-598-9740',
       address: '700 S. Rancho Santa Fe Rd. #A\nSan Marcos, CA 92078',
       cross: 'Rancho Santa Fe and San Marcos Blvd.',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '33.132939',
+      lng: '-117.207828'      
     },
     {
       location: 'San Marcos 2',
@@ -393,8 +393,8 @@ export default {
       fax: 'Coming soon!',
       address: '595 Grand Ave. #100\nSan Marcos, CA 92078',
       cross: 'Grand Ave. and Creekside Place',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '33.136102',
+      lng: '-117.178264'      
     },
     {
       location: 'Telegraph',
@@ -402,8 +402,8 @@ export default {
       fax: '619-656-9333',
       address: '523 Telegraph Canyon Rd.\nChula Vista, CA 91911',
       cross: 'Telegraph Canyon Rd. and I-805',
-      lat: '34.068911',
-      lng: '-117.977484'      
+      lat: '32.629148',
+      lng: '-117.039618'      
     }
     ]
   }

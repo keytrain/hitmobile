@@ -11,14 +11,20 @@ body {
   font-size:14px;
   line-height: 1.3em;
   font-family: 'Nunito', sans-serif;
-  background-color:#444;
+  background-color:#222;
 }
 a {
   color: #fff;
+  text-decoration: none;
 }
 a:hover {
-  color: deeppink
+  color: deeppink;
+  text-decoration: underline;
 }
+a {
+ color:deeppink; 
+}
+
 h1 {
   font-weight:200;
 }
@@ -33,6 +39,7 @@ hr.left {
 }
 hr.footer {
   width:100%;
+  margin-top:3rem;
   border-bottom:1px solid #ddd;
 }
 input {
@@ -54,6 +61,7 @@ input:active {
 }
 .button:hover {
   background-color:#fff;
+  text-decoration:none;
   box-shadow: 0 0 20px 0 deeppink;
   color:#333;
 }
@@ -79,11 +87,10 @@ nav {
 .logo {
   display:inline-block;
   width:10%;
-  text-align:center;
-  padding:1rem;
+  /*padding:1rem;*/
   margin:0;
-  color:#333;
-  background-color:#fff;
+  /*color:#333;*/
+  /*background-color:#fff;*/
 }
 .nav-links {
   display:inline-block;
@@ -103,6 +110,7 @@ nav a {
 .nav-links a:hover {
   color:#fff;
   border-bottom:1px solid hotpink;
+  text-decoration:none;
 }
 .nav-link-active {
   color:#fff!important;
@@ -175,14 +183,15 @@ p.center-text {
   margin:0 auto;
 }
 .quote {
+  transition: ease-in-out 0.3s;
   text-align:center;
   display:inline-block;
   border-radius:5px;
   padding:2rem;
-  background-color:#f1f1f1;
+  background-color:deeppink;
   width:60%;
   vertical-align: middle;
-  color:#333;
+  color:#fff;
 }
 .quote p {
   margin:1.5rem 0;
@@ -195,22 +204,22 @@ p.center-text {
 .quote-icon-left {
   text-align:left;
   display:block;
-  color:deeppink;
+  color:#fff;
 }
 .quote-icon-right {
   display:block;
   text-align:right;
-  color:deeppink;
+  color:#fff;
 }
 .quote-icon-arrow {
   transition: ease-in-out 0.3s;
   cursor: pointer;
   opacity:0.5;
   border-radius: 100%;
-  padding:0.3rem 1rem;
+  padding:1rem 1.5rem;
 }
 .quote-icon-arrow:hover {
-  background-color:#444;
+  /*background-color:#444;*/
   opacity:1;
 }
 .quote-arrow-left {
@@ -234,6 +243,9 @@ h2.center {
 }
 .sizzler h1 {
   line-height:16px;
+}
+.sizzler h3 {
+  font-weight:400;
 }
 .social {
   position:absolute;
@@ -267,15 +279,23 @@ h2.center {
 .intro {
   background-color: #fff;
 }
-
 .testimonial {
   color:#fff;
   background-color: #333;
   text-align:center;
+  padding-bottom:4rem;
 }
 .stores {
   background-color: #fff;
 }
+  .locItem:hover {
+    cursor:pointer;
+    color: deeppink;
+  }
+  .locItemActive {
+    color: deeppink;
+    font-weight:800;
+  }
 .job {
   color:#fff;
   background-color: #333;
@@ -285,6 +305,37 @@ h2.center {
   background-color: #333;
   text-align:center;
 }
+  .questionCTA {
+  }
+.finalCTA {
+  padding:0;
+  margin:0;
+  background-color:deeppink;
+  color:#fff;
+  text-align:center;
+}
+.finalCTAbuttons {
+  display:inline-block;
+  vertical-align: top;
+  padding:3rem 5rem;
+  width:49.5%;
+  padding-bottom:4rem;
+  color:#fff;
+}
+.finalCTAbuttons:hover {
+  background-color:deeppink;
+  color:#fff;
+  cursor:pointer;
+}
+.finalCTAbuttons p {
+  transition:ease-in-out 0.3s;  
+}
+.finalCTAbuttons:hover p {
+  padding-left:2rem;
+}
+  .jobButton {
+    border-right:1px solid #fff;
+  }
 footer {
   background-color: #fff;
 }
@@ -292,12 +343,28 @@ footer {
   width:180px;
   height:60px;
 }
+.footer-links {
+  float:right;
+}
+.footer-contact h4 {
+  padding: 0;
+  margin-top:0;
+}
+  .footer-col {
+    text-align:center;
+  }
 
 /* Tablet */
 @media screen and (min-width: 426px) {
   h1 {
-    font-size:3.5em;
+    font-size:4.5em;
     font-weight:200;
+  }
+  h2 {
+    font-size:2em;
+  }
+  h3 {
+    font-size:1.5em;
   }
   nav {
     color:#fff;
@@ -332,11 +399,12 @@ footer {
   .support-img {
     display:inline-block;
     vertical-align:middle;
-    height:20rem;
+    height:30rem;
     width:55%;
     background: no-repeat center url("/img/1.JPG");
     box-shadow: 0 0 20px 0 #ddd;
     background-size: cover;
+    border-radius:5px;
   }
   .support img {
     height:inherit;
@@ -354,6 +422,7 @@ footer {
   .find {
     width:40%;
     padding-right:3rem;
+    padding-bottom:2rem;
   }
   .gmaps-container {
     position:absolute;
@@ -366,6 +435,7 @@ footer {
       width:100%!important;
       height:100%!important;
     }
+
 }
 
 /* Laptop+ */
@@ -388,6 +458,19 @@ footer {
   }
   .support-right img {
     right:-4rem;
+  }
+  .footer-col {
+    text-align:left;
+    display:inline-block;  
+    width:49.5%;
+  }
+  .footer-about {
+    padding-right:3rem;
+    vertical-align: top;
+  }
+  .footer-contact {
+    padding-left:3rem;
+    vertical-align: top;
   }
 }
 
