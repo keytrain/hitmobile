@@ -5,7 +5,7 @@ import FontAwesome from 'react-fontawesome'
 function Careers(props) {
   return (
     <div>
-      <header className='careers'>
+      <header className='top'>
         <h1 className='header'>HITMobile</h1>
       </header>
       <div className='section intro'>

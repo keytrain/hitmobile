@@ -171,7 +171,7 @@ window.data = {
       location: 'La Puente',
       phone: '626-917-0420',
       fax: '626-918-2106',
-      address: '1273 N. Hacienda Blvd #3\n, CA 91744',
+      address: '1273 N. Hacienda Blvd #3\nLa Puente, CA 91744',
       cross: 'Hacienda Blvd and Fairgrove',
       lat: '34.043494',
       lng: '-117.950205'      
@@ -347,9 +347,9 @@ window.data = {
       phone: '619-590-1900',
       fax: '619-590-1989',
       address: '354 N. 2nd Street\nEl Cajon, CA 92021',
-      cross: '',
-      lat: '32.827768',
-      lng: '-117.208853'      
+      cross: 'N 2nd and Kumeyaay Hwy',
+      lat: '32.799011',
+      lng: '-116.936626'      
     },      
     {
       location: 'Escondido',

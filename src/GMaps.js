@@ -20,7 +20,7 @@ export class Container extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    if (this.props.item) {
+    if (prevProps.item !== this.props.item) {
       this.state.map.panTo({lat: parseFloat(this.props.item.lat), lng: parseFloat(this.props.item.lng)})
       this.state.map.setZoom(17);
     }

@@ -121,7 +121,7 @@ class Landing extends React.Component {
         <div className='section stores' id='find'>
           <div className='content'>
             <div className='find'>
-              <h2>Find a store near you!</h2>
+              <h2>Find a Store</h2>
               <h3>La North</h3>
               {window.data.stores.lanorth.map((e, index) => (
                 <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='lanorth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
