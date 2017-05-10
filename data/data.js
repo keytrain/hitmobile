@@ -50,50 +50,23 @@ window.data = {
     team: {
       en: [
         {
-          avatar: '',
-          name: 'Robert Fenix',
+          icon: './img/meet/b.jpg',
+          icon2: './img/meet/b2.jpg',
+          name: 'Mauro Martinez',
           role: 'CEO'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/c.jpg',
+          icon2: './img/meet/c2.jpg',
+          name: 'Sunil Hathiramani',
+          role: 'COO'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
+          icon: './img/meet/a.jpg',
+          icon2: './img/meet/a2.jpg',
+          name: 'David Kaufman',
+          role: 'CFO'
+        }
       ]
     },
     benefits: {
@@ -127,13 +100,16 @@ window.data = {
     jobs: {
       en: [
         {
-          text: 'Retail Store Manager'
+          text: 'Retail Store Manager',
+          link: './jobs/StoreManager.pdf'
         },
         {
-          text: 'Assistant Store Manager'
+          text: 'Assistant Store Manager',
+          link: './jobs/AssistantStoreManager.pdf'
         },
         {
-          text: 'Retail Store Associate'
+          text: 'Retail Store Associate',
+          link: './jobs/RetailSalesAssociate.pdf'
         },
       ]
     }
