@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Business(props) {
+  window.scrollTo(0,0);
   return (
     <div>
       <header className='top'>

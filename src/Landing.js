@@ -1,19 +1,18 @@
-import React from 'react'
-import GMaps from './GMaps'
-import FontAwesome from 'react-fontawesome'
-import Sizzler from './Sizzler'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import FontAwesome from 'react-fontawesome';
+import Sizzler from './Sizzler';
+
+// import { Link } from 'react-router-dom';
+// import Scrollchor from 'react-scrollchor';
 
 class Landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       quote: 0,
-      quoteMax: window.data.content.testimonial.customer[this.props.lang].length,
-      selection: '',
+      quoteMax: window.data.content.testimonial.customer.length,
     };
 
-    this.handleLocation = this.handleLocation.bind(this);
     this.handleQuote = this.handleQuote.bind(this);
   }
 
@@ -42,127 +41,90 @@ class Landing extends React.Component {
     }
   }
 
-  handleLocation(e) {
-    let area = e.currentTarget.attributes['data-area'].value;
-    let loc = e.currentTarget.attributes['data-loc'].value;
-
-    this.setState({selection: window.data.stores[area][loc]});
-  }
-
   render() {
+    const img1 = {
+      background: 'no-repeat center url("./img/pitch/1.JPG")',
+      backgroundPosition: '40% 28%'
+    }
+    const img2 = {
+      background: 'no-repeat center url("./img/pitch/2.JPG")',
+      backgroundPosition: '40% 24%'
+    }
+    const img3 = {
+      background: 'no-repeat center url("./img/pitch/3.JPG")',
+      backgroundPosition: '50% 24%'
+    }
+    let data = window.data;
+
     return (
       <div>
         <Sizzler />
         <header>
           <div>
             <div className='sizzler'>
-              <h1>Estamos Juntos</h1>
-              <h3>Bridging Latino consumers and the wireless world.</h3>
-              <br />
-              <a href='#find' className='button button-outline'>Find a Store</a>
+              <div className='wh'><h1 className='wh-work'>WORK</h1><h1 className='wh-hard'>HARD</h1></div>
+              <div className='ph'><h1 className='ph-play'>PLAY</h1><h1 className='ph-hard'>HARD</h1></div>
             </div>
           </div>
         </header>
         <div className='section intro'>
           <div className='content'>
-
-            <div className='pitch'>
-              <h2>At HITmobile, it's all about the customer experience.</h2>
-              <p>The customer is the heart of every transaction and we treat each customer like family. <br />We will provide the Latino community a one stop shop for all their wireless needs.</p>
-              <hr />
-            </div>
-            {/*<p>{data.content.intro[this.state.lang].about}</p>*/}
-
-            <div className='support support-left'>
-              <div className='support-img'></div>
+            <div className='support'>
+              <div className='support-img' style={img3}></div>
               <div className='support-text'>
-                <h3>Bilingual Support</h3>
-                <p>In the store, on the phone and online, 100% bilingual sales and customer service hired directly from within the community, and 100% bilingual merchandising and marketing materials.</p>
+                <h3>{data.content.landing.one.title}</h3>
+                <p>{data.content.landing.one.text}</p>
               </div>
             </div>
             
-          <div className='support support-right'>
+          <div className='support'>
+              <div className='support-img' style={img1}></div>
               <div className='support-text'>
-                <h3>A Complete Experience</h3>
-                <p>Products that meet your needs like competitive international rates, flex pay products, and family plans.</p>
+                <h3>{data.content.landing.two.title}</h3>
+                <p>{data.content.landing.two.text}</p>
               </div>
-              <div className='support-img'></div>
             </div>
 
-            <div className='support support-left'>
-              <div className='support-img'></div>
+            <div className='support last'>
+              <div className='support-img' style={img2}></div>
               <div className='support-text'>
-                <h3>Full Setup</h3>
-                <p>100% customer satisfaction by helping personalize your wireless solution with the right phone, the right plan, and the right way to pay. 100% set up including feature demonstrations.</p>
+                <h3>{data.content.landing.three.title}</h3>
+                <p>{data.content.landing.three.text}</p>
               </div>
             </div>
+
+            <div><h2 className='hashtagwws'>#wewontstop</h2></div>
+          </div>
+        </div>
+        <div className='section landing-job'>
+          <div className='content'>
+            <div className='pitch'>
+              <h1 className='jobtagline'>BE BOLD, BE YOU,<br />BE <span>MAGENTA</span></h1>
+              <h2><em>{data.content.landing.job.title}</em></h2>
+              <p>{data.content.landing.job.text}</p>
+            </div>
+            {data.content.benefits.map((e, index) =>
+              <div className='landing-icons' key={index}>
+                <FontAwesome name={e.icon} size='2x' />
+              </div>
+            )}
+            <div className='landing-job-button'><a className='button' href='./#/jobs'>FIND OPPORTUNITIES</a></div>
           </div>
         </div>
         <div className='section testimonial'>
           <div className='content'>
             <div className='pitch'>
-            <h2>But don't take it from us.</h2>
-            <p>Here's some feedback we got from our customers.</p>
-            </div>
-            <br /><br />
-            <div className='quote-arrow-left'>
-              <FontAwesome name='angle-left' className='quote-icon-arrow' data-dir='left' size='2x' onClick={this.handleQuote} />
+              <h2>LET'S HEAR IT FROM THE CUSTOMERS</h2>
             </div>
             <div className='quote'>
-              <FontAwesome name='quote-left' className='quote-icon-left' size='2x' />
-              <p>{window.data.content.testimonial.customer[this.props.lang][this.state.quote].text}</p>
-              <FontAwesome name='quote-right' className='quote-icon-right' size='2x' />
-            </div>
-            <div className='quote-arrow-right'>
-              <FontAwesome name='angle-right' className='quote-icon-arrow' data-dir='right' size='2x' onClick={this.handleQuote} />
-            </div>
-          </div>
-        </div>
-        <div className='section stores' id='find'>
-          <div className='content'>
-            <div className='find'>
-              <h2>Find a Store</h2>
-              <h3>La North</h3>
-              {window.data.stores.lanorth.map((e, index) => (
-                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='lanorth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
-              ))}
-              <h3>La South</h3>
-              {window.data.stores.lasouth.map((e, index) => (
-                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='lasouth' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
-              ))}
-              <h3>San Diego</h3>
-              {window.data.stores.sandiego.map((e, index) => (
-                <div key={index} className={'locItem ' + (this.state.selection.location===e.location ? 'locItemActive':'')} data-area='sandiego' data-loc={index} onClick={this.handleLocation}>{e.location}</div>
-              ))}
-            </div>
-            <div className='gmaps-container'>
-              <GMaps item={this.state.selection} />
-            </div>
-          </div>
-        </div>
-        <div className='section contact'>
-          <div className='content'>
-            <div className='questionCTA'>
-              <h2>Still have a question?</h2>
-              <p>Call us at (877) 448 - 7711</p>
-              <p>or</p>
-              <p>Email us at <a href='emailto:customerfeedback@myhitmobile.com'>customerfeedback@myhitmobile.com</a></p>
-            </div>
-          </div>
-        </div>
-        <div className='section finalCTA'>
-            <a href='/careers'>
-              <div className='finalCTAbuttons jobButton'>
-                <h3>Looking for a job?</h3>
-                <p>Find opportunities <FontAwesome name='arrow-circle-right' className='CTAArrow' /></p>
+              <p>&ldquo;{data.content.testimonial.customer[this.state.quote].text}&rdquo;</p>
+              <div className='quote-arrow'>
+                <FontAwesome name='angle-left' className='quote-icon-arrow' data-dir='left' size='2x' onClick={this.handleQuote} />
+                <FontAwesome name='angle-right' className='quote-icon-arrow' data-dir='right' size='2x' onClick={this.handleQuote} />
               </div>
-            </a>
-            <a href='/business'>
-              <div className='finalCTAbuttons busButton'>
-                <h3>Are you a business?</h3>
-                <p>Talk to us <FontAwesome name='arrow-circle-right' className='CTAArrow' /></p>
-              </div>
-            </a>
+            </div>
+
+          </div>
         </div>
 
       </div>

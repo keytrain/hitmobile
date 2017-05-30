@@ -8,203 +8,164 @@ window.data = {
 
       }
     },
-    intro: {
-      en: {
-        about: 'HIT Mobile was created in recognition of the vast opportunity to cater to the underserved Latino cell phone market. Understanding that with special focus on meeting unique customer needs, we will provide an excellent mobile experience and a long lasting relationship with the community. While our competitors simply service all of their customers the same, we are a part of the community and understand how to meet the needs of the fastest growing customer base in the United States. HIT Mobile will be the bridge between the Latino consumers and the wireless world. We’ve found a great partner in T-Mobile to help us achieve this.',
-        cust: ''
+    landing: {
+      one: {
+        title: 'CUSTOMERS',
+        text: 'Putting our customers first is our biggest priority. We want to learn about you to make certain you\'re taken care of right the first time.'
       },
-      es: {
-        about: 'HIT Mobile fue creado en reconocimiento de la inmensa oportunidad de abastecer a los latinos necesitados de servicios de celular. Entendiendo que con enfoque especial en llenar las necesidades únicas de los clientes, nosotros proveeremos una excelente experiencia móvil y una relación duradera con la comunidad. Mientras nuestros competidores simplemente dan el mismo servicio a todos los clientes, nosotros somos parte de la comunidad y entendemos cómo llenar las necesidades de la más rápida base creciente del cliente en Estados Unidos. HIT Mobile será el puente entre los consumidores latinos y el mundo inalámbrico. Hemos encontrado un gran compañero en T-Mobile para ayudarnos a lograr esto.'
+      two: {
+        title: 'EMPLOYEES',
+        text: 'The backbone and strength of our Company is our employees. Our goal is focused around making a fun and dynamic environment for our team.'
+      }, 
+      three: {
+        title: 'SERVICE',
+        text: 'Changing wireless for good and making sure we take care of our customers. Our focus is to make our customers our long time clients.'
+      },
+      job: {
+        title: '#jointhemovement',
+        text: 'Here at HIT Mobile we support our community members by offering jobs with competitive pay, benefits, flexible schedules, growth and development, and a fun environment.'
       }
     },
     testimonial: {
-      customer: {
-        en: [
-          {
-            text: 'Great service and I like that there are bilingual employees.'
-          },
-          {
-            text: 'I love the way they help each other and helped me get my iPhone 7 Plus. I had a fun experience and I will keep on going there to pay my bills and to get new phones!'
-          },
-          {
-            text: 'Everyone was very professional and friendly.'
-          },
-          {
-            text: 'The associate was eager to help and was very engaging.'
-          },
-          {
-            text: 'Very professional yet friendly... absolutely great customer service.'
-          },
-          {
-            text: 'Associate was very knowledgeable, friendly, and patient. Had very good customer service skills..'
-          },
-          {
-            text: 'This store is great! Very very happy.'
-          },
-          {
-            text: 'All associates were very helpful and welcoming.'
-          }
-        ]
+      customer: [
+        {
+          text: 'Great service and I like that there are bilingual employees.'
+        },
+        {
+          text: 'I love the way they help each other and helped me get my iPhone 7 Plus. I had a fun experience and I will keep on going there to pay my bills and to get new phones!'
+        },
+        {
+          text: 'Everyone was very professional and friendly.'
+        },
+        {
+          text: 'The associate was eager to help and was very engaging.'
+        },
+        {
+          text: 'Very professional yet friendly... absolutely great customer service.'
+        },
+        {
+          text: 'Associate was very knowledgeable, friendly, and patient. Had very good customer service skills...'
+        },
+        {
+          text: 'This store is great! Very very happy.'
+        },
+        {
+          text: 'All associates were very helpful and welcoming.'
+        }
+      ]
+    },
+    about: {
+      one: {
+        title: 'WHO ARE WE',
+        text: 'HIT Mobile is one of the largest T-Mobile partners in the Southwest with stores conveniently located from Los Angeles, CA to San Diego, CA. We are committed to working hard, having fun, and taking care of our customers!'
+      },
+      two: {
+        title: 'OUR MISSION',
+        text: 'To focus our energy and effort in developing a world class sales team to ensure our customers become our clients.'
+      }, 
+      three: {
+        title: 'OUR VALUES',
+        text: ['Making our customers first', 'Developing our people into the best they can be', 'Having the energy and passion for winning', 'Ensuring everything is done with integrity']
       }
     },
     team: {
-      en: [
+      founders: [
         {
-          avatar: '',
-          name: 'Robert Fenix',
+          icon: './img/meet/b.jpg',
+          icon2: './img/meet/b2.jpg',
+          name: 'Mauro Martinez',
           role: 'CEO'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/c.jpg',
+          icon2: './img/meet/c2.jpg',
+          name: 'Sunil Hathiramani',
+          role: 'COO'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/a.jpg',
+          icon2: './img/meet/a2.jpg',
+          name: 'David Kaufman',
+          role: 'CFO'
+        }
+      ],
+      key: [
+        {
+          icon: './img/meet/b.jpg',
+          icon2: './img/meet/b2.jpg',
+          name: 'Carlos Vasquez',
+          role: 'Director of Sales - LA'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/c.jpg',
+          icon2: './img/meet/c2.jpg',
+          name: 'Tamela Milini',
+          role: 'Director of Sales - SD'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/a.jpg',
+          icon2: './img/meet/a2.jpg',
+          name: 'Alma Burgos',
+          role: 'Director of Operations'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
+          icon: './img/meet/a.jpg',
+          icon2: './img/meet/a2.jpg',
+          name: 'Saadiya Horani',
+          role: 'Commission Specialist'
         },
         {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
-        {
-          avatar: '',
-          name: 'Robert Fenix',
-          role: 'CEO'
-        },
+          icon: './img/meet/a.jpg',
+          icon2: './img/meet/a2.jpg',
+          name: 'Desiree Quan',
+          role: 'Human Resources Manager'
+        }
       ]
     },
-    benefits: {
-      en: [
-        {
-          icon: 'tachometer',
-          text: 'Opportunity to work in a creative, fast-paced, environment'
-        },
-        {
-          icon: 'heartbeat',
-          text: 'Health benefits for full time employees'
-        },
-        {
-          icon: 'money',
-          text: 'Excellent sales incentives (i.e. bonuses) & Uncapped commission earnings'
-        },
-        {
-          icon: 'line-chart',
-          text: 'Career advancement'
-        },
-        {
-          icon: 'sun-o',
-          text: 'PTO'
-        },
-        {
-          icon: 'hand-peace-o',
-          text: 'T-Mobile discounts'
-        },
-      ]
-    },
-    jobs: {
-      en: [
-        {
-          text: 'Retail Store Manager'
-        },
-        {
-          text: 'Assistant Store Manager'
-        },
-        {
-          text: 'Retail Store Associate'
-        },
-      ]
-    }
+    benefits: [
+      {
+        icon: 'lightbulb-o',
+        text: 'Growth and Development'
+      },
+      {
+        icon: 'tachometer',
+        text: 'Fun and dynamic environment'
+      },
+      {
+        icon: 'money',
+        text: 'Uncapped Commissions'
+      },
+      {
+        icon: 'line-chart',
+        text: 'Career Advancement'
+      },
+      {
+        icon: 'heartbeat',
+        text: 'Health Benefits'
+      },
+      {
+        icon: 'sun-o',
+        text: 'Rest and Relaxation'
+      },
+
+    ],
+    jobs: [
+      {
+        text: 'RETAIL STORE MANAGER',
+        link: './jobs/StoreManager.pdf'
+      },
+      {
+        text: 'ASSISTANT STORE MANAGER',
+        link: './jobs/AssistantStoreManager.pdf'
+      },
+      {
+        text: 'RETAIL STORE ASSOCIATE',
+        link: './jobs/RetailSalesAssociate.pdf'
+      },
+    ]
   },
   stores: {
-    lanorth: [
-    {
-      location: 'Baldwin Park',
-      phone: '626-388-9182',
-      fax: '626-851-8165',
-      address: '3060 Baldwin Park Blvd #D101\nBaldwin Park, CA 91706',
-      cross: 'Baldwin Park Blvd and Francisquito',
-      lat: '34.068911',
-      lng: '-117.977484'
-    },
-    {
-      location: 'Covina',
-      phone: '626-966-3263',
-      fax: '626-966-3516',
-      address: '220 N Azusa Ave.\nCovina, CA 91722',
-      cross: 'Azusa Ave and Badillo',
-      lat: '34.087578',
-      lng: '-117.907472'      
-    },
-    {
-      location: 'Downey',
-      phone: 'Coming soon!',
-      fax: 'Coming soon!',
-      address: '8994 Apollo Way\nDowney, CA 90242',
-      cross: 'Apollo Way and Bellflower Blvd',
-      lat: '33.922721',
-      lng: '-118.125753'      
-    },
-    {
-      location: 'La Puente',
-      phone: '626-917-0420',
-      fax: '626-918-2106',
-      address: '1273 N. Hacienda Blvd #3\nLa Puente, CA 91744',
-      cross: 'Hacienda Blvd and Fairgrove',
-      lat: '34.043494',
-      lng: '-117.950205'      
-    },
-    {
-      location: 'Monterey Park',
-      phone: '323-780-0177',
-      fax: '323-780-9384',
-      address: '2123 S. Atlantic Blvd\nMonterey Park, CA 91754',
-      cross: 'Atlantic Ave and Floral',
-      lat: '34.038920',
-      lng: '-118.145409'      
-    },
-    {
-      location: 'Northridge',
-      phone: '818-988-2400',
-      fax: '818-998-2401',
-      address: '18497 Nordhoff St.\nNorthridge, CA 91325',
-      cross: 'Reseda and Nordhoff Blvd',
-      lat: '34.236051',
-      lng: '-118.535477'      
-    },
-    {
-      location: 'Panorama City',
-      phone: '818-781-1148',
-      fax: '818-781-1325',
-      address: '8244 Van Nuys Blvd.\nPanorama City, CA 91402',
-      cross: 'Van Nuys and Titus',
-      lat: '34.220922',
-      lng: '-118.448491'      
-    },
-    ],
-    lasouth: [
+    la: [
     {
       location: 'Anaheim',
       phone: '657-233-5566',
@@ -215,6 +176,15 @@ window.data = {
       lng: '-117.940651'      
     },
     {
+      location: 'Baldwin Park',
+      phone: '626-388-9182',
+      fax: '626-851-8165',
+      address: '3060 Baldwin Park Blvd #D101\nBaldwin Park, CA 91706',
+      cross: 'Baldwin Park Blvd and Francisquito',
+      lat: '34.068911',
+      lng: '-117.977484'
+    },
+    {
       location: 'Bixby Knolls',
       phone: 'Coming soon!',
       fax: 'Coming soon!',
@@ -222,6 +192,15 @@ window.data = {
       cross: 'Atlantic Ave and E 45th St.',
       lat: '33.840197',
       lng: '-118.184362'      
+    },
+    {
+      location: 'Covina',
+      phone: '626-966-3263',
+      fax: '626-966-3516',
+      address: '220 N Azusa Ave.\nCovina, CA 91722',
+      cross: 'Azusa Ave and Badillo',
+      lat: '34.087578',
+      lng: '-117.907472'      
     },
     {
       location: 'Crenshaw',
@@ -240,6 +219,15 @@ window.data = {
       cross: 'Atlantic Ave. and Florence',
       lat: '33.969824',
       lng: '-118.187686'      
+    },
+    {
+      location: 'Downey',
+      phone: 'Coming soon!',
+      fax: 'Coming soon!',
+      address: '8994 Apollo Way\nDowney, CA 90242',
+      cross: 'Apollo Way and Bellflower Blvd',
+      lat: '33.922721',
+      lng: '-118.125753'      
     },
     {
       location: 'Fullerton',
@@ -269,6 +257,15 @@ window.data = {
       lng: '-118.349622'      
     },
     {
+      location: 'La Puente',
+      phone: '626-917-0420',
+      fax: '626-918-2106',
+      address: '1273 N. Hacienda Blvd #3\nLa Puente, CA 91744',
+      cross: 'Hacienda Blvd and Fairgrove',
+      lat: '34.043494',
+      lng: '-117.950205'      
+    },
+    {
       location: 'Long Beach 1',
       phone: '562-424-1762',
       fax: '562-988-8714',
@@ -285,6 +282,33 @@ window.data = {
       cross: 'Spring St. and Palo Verde Ave.',
       lat: '33.810762',
       lng: '-118.106303'      
+    },
+    {
+      location: 'Monterey Park',
+      phone: '323-780-0177',
+      fax: '323-780-9384',
+      address: '2123 S. Atlantic Blvd\nMonterey Park, CA 91754',
+      cross: 'Atlantic Ave and Floral',
+      lat: '34.038920',
+      lng: '-118.145409'      
+    },
+    {
+      location: 'Northridge',
+      phone: '818-988-2400',
+      fax: '818-998-2401',
+      address: '18497 Nordhoff St.\nNorthridge, CA 91325',
+      cross: 'Reseda and Nordhoff Blvd',
+      lat: '34.236051',
+      lng: '-118.535477'      
+    },
+    {
+      location: 'Panorama',
+      phone: '818-781-1148',
+      fax: '818-781-1325',
+      address: '8244 Van Nuys Blvd.\nPanorama City, CA 91402',
+      cross: 'Van Nuys and Titus',
+      lat: '34.220922',
+      lng: '-118.448491'      
     },
     {
       location: 'Santa Ana',
@@ -314,7 +338,7 @@ window.data = {
       lng: '-118.009705'      
     }
     ],
-    sandiego: [
+    sd: [
     {
       location: 'Chula Broadway',
       phone: '619-691-9100',
@@ -350,7 +374,7 @@ window.data = {
       cross: 'N 2nd and Kumeyaay Hwy',
       lat: '32.799011',
       lng: '-116.936626'      
-    },      
+    },
     {
       location: 'Escondido',
       phone: '760-747-1033',

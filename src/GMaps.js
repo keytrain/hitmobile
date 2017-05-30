@@ -52,6 +52,8 @@ export class Container extends Component {
   }
 
   render() {
+    let data = window.data;
+
     return (
       <Map google={this.props.google} 
         onClick={this.onMapClicked} 
@@ -64,14 +66,11 @@ export class Container extends Component {
         className={'gmaps'}>
           {/*<Marker onClick={this.onMarkerClick} name={this.props.item.location} position={{lat: this.props.item.lat, lng: this.props.item.lng }} />*/}
 
-        {window.data.stores.lanorth.map((e, index) => (
-          <Marker key={index} onClick={this.onMarkerClick} data-loc={index} data-area='lanorth' name={e.location} position={{lat: e.lat, lng: e.lng }} />
+        {data.stores.la.map((e, index) => (
+          <Marker key={index} onClick={this.onMarkerClick} data-loc={index} data-area='la' name={e.location} position={{lat: e.lat, lng: e.lng }} />
         ))}
-        {window.data.stores.lasouth.map((e, index) => (
-          <Marker key={index} onClick={this.onMarkerClick} data-loc={index} data-area='lasouth' name={e.location} position={{lat: e.lat, lng: e.lng }} />
-        ))}
-        {window.data.stores.sandiego.map((e, index) => (
-          <Marker  key={index} onClick={this.onMarkerClick} data-loc={index} data-area='sandiego' name={e.location} position={{lat: e.lat, lng: e.lng }} />
+        {data.stores.sd.map((e, index) => (
+          <Marker  key={index} onClick={this.onMarkerClick} data-loc={index} data-area='sd' name={e.location} position={{lat: e.lat, lng: e.lng }} />
         ))}
         <InfoWindow
           marker={this.state.activeMarker}
