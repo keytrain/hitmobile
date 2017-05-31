@@ -1,12 +1,9 @@
 window.data = {
   content: {
-    sizzler: {
-      en: {
-
-      },
-      es: {
-
-      }
+    contact: {
+      phone: '877.448.7711',
+      fax: '714.486.3051',
+      email: 'customerfeedback@myhitmobile.com'
     },
     landing: {
       one: {
@@ -91,32 +88,27 @@ window.data = {
       ],
       key: [
         {
-          icon: './img/meet/b.jpg',
-          icon2: './img/meet/b2.jpg',
+          icon: './img/meet/cv.jpg',
           name: 'Carlos Vasquez',
           role: 'Director of Sales - LA'
         },
         {
-          icon: './img/meet/c.jpg',
-          icon2: './img/meet/c2.jpg',
+          icon: './img/meet/tm.jpg',
           name: 'Tamela Milini',
           role: 'Director of Sales - SD'
         },
         {
-          icon: './img/meet/a.jpg',
-          icon2: './img/meet/a2.jpg',
+          icon: './img/meet/ab.jpg',
           name: 'Alma Burgos',
           role: 'Director of Operations'
         },
         {
-          icon: './img/meet/a.jpg',
-          icon2: './img/meet/a2.jpg',
+          icon: './img/meet/sh.jpg',
           name: 'Saadiya Horani',
           role: 'Commission Specialist'
         },
         {
-          icon: './img/meet/a.jpg',
-          icon2: './img/meet/a2.jpg',
+          icon: './img/meet/dq.jpg',
           name: 'Desiree Quan',
           role: 'Human Resources Manager'
         }
@@ -173,7 +165,7 @@ window.data = {
       address: '1686 W Katella Ave\nAnaheim, CA 92802',
       cross: 'Katella Ave and Euclid St.',
       lat: '33.801721',
-      lng: '-117.940651'      
+      lng: '-117.940651'
     },
     {
       location: 'Baldwin Park',
@@ -191,7 +183,7 @@ window.data = {
       address: '4512 Atlantic Avenue\nLong Beach, CA 90807',
       cross: 'Atlantic Ave and E 45th St.',
       lat: '33.840197',
-      lng: '-118.184362'      
+      lng: '-118.184362'
     },
     {
       location: 'Covina',
@@ -284,6 +276,15 @@ window.data = {
       lng: '-118.106303'      
     },
     {
+      location: 'Maywood',
+      phone: '',
+      fax: '',
+      address: '8994 Slauson Avenue\nMaywood, CA 90270',
+      cross: 'Slauson and Atlantic',
+      lat: '33.9874467',
+      lng: '-118.1885924'      
+    },
+    {
       location: 'Monterey Park',
       phone: '323-780-0177',
       fax: '323-780-9384',
@@ -336,6 +337,15 @@ window.data = {
       cross: 'Westminster and Goldenwest',
       lat: '33.761474',
       lng: '-118.009705'      
+    },
+    {
+      location: 'Whittier',
+      phone: '562-205-1400',
+      fax: '562-205-1407',
+      address: '11133 Washington Blvd\nWhittier, CA 90606',
+      cross: 'Washington Blvd and Norwalk',
+      lat: '33.9733699',
+      lng: '-118.07267389999998'   
     }
     ],
     sd: [
@@ -367,13 +377,22 @@ window.data = {
       lng: '-117.208853'      
     },
     {
-      location: 'El Cajon',
+      location: 'El Cajon 1',
       phone: '619-590-1900',
       fax: '619-590-1989',
       address: '354 N. 2nd Street\nEl Cajon, CA 92021',
       cross: 'N 2nd and Kumeyaay Hwy',
       lat: '32.799011',
       lng: '-116.936626'      
+    },
+    {
+      location: 'El Cajon 2',
+      phone: '',
+      fax: '',
+      address: '139 N Magnolia Avenue\nEl Cajon, CA 92020',
+      cross: 'Magnolia Ave. and Rea Ave.',
+      lat: '32.7957328',
+      lng: '-116.96228429999996'      
     },
     {
       location: 'Escondido',
@@ -385,6 +404,24 @@ window.data = {
       lng: '-117.066573'      
     },
     {
+      location: 'Highland',
+      phone: '619-656-9300',
+      fax: '619-656-9333',
+      address: '3007 Highland Ave #109\nNational City, CA 91950',
+      cross: 'Highland Ave and 30th',
+      lat: '32.6588188',
+      lng: '-117.0888635'      
+    },
+    {
+      location: 'La Jolla',
+      phone: '',
+      fax: '',
+      address: '8801 Villa La Jolla Drive\nLa Jolla, CA 92037',
+      cross: 'Villa La Jolla Dr. and Nobel Dr.',
+      lat: '32.8681139',
+      lng: '-117.2329019'      
+    },
+    {
       location: 'Murphy Canyon',
       phone: '858-694-0474',
       fax: '858-694-0479',
@@ -394,14 +431,23 @@ window.data = {
       lng: '-117.116016'      
     },
     {
-      location: 'National City',
-      phone: '619-477-7278',
-      fax: '619-477-7328',
-      address: '3007 Highland Ave. #109\nNational City, CA 91950',
-      cross: 'Highland Ave. and 30th',
-      lat: '32.658819',
-      lng: '-117.088864'      
+      location: 'Oceanside',
+      phone: '',
+      fax: '',
+      address: '463 College Blvd Unit N\nOceanside, CA 92057',
+      cross: 'College Blvd and Hwy 76',
+      lat: '33.244438',
+      lng: '-117.29245300000002'      
     },
+    // {
+    //   location: 'National City',
+    //   phone: '619-477-7278',
+    //   fax: '619-477-7328',
+    //   address: '3007 Highland Ave. #109\nNational City, CA 91950',
+    //   cross: 'Highland Ave. and 30th',
+    //   lat: '32.658819',
+    //   lng: '-117.088864'      
+    // },
     {
       location: 'San Marcos 1',
       phone: '760-598-7209',
